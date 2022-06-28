@@ -4,5 +4,4 @@ Config文件是配置文件,对里面很多参数进行了设置,如随机数种
 
 util文件是一些函数,如画图,获取对应的label,以及读取数据.然后画图和获取label的两个函数,做了判断,李沐老师那个是只有批量才能运行,我进行了if判断,然后单个的也可以运行.
 
-pytorch 实现图像分类文件是主程序,调用pytorch框架实现FashionMNIST数据集,其中由于pycharm动态绘图好像不行的,所以我使用tensorboardX来实现训练可视化.然后精度,李沐老师是自己实现的,然后我嫌太麻烦了,就调用sklearn.metric的精度的包了.
-
+pytorch 实现图像分类文件是主程序,调用pytorch框架实现FashionMNIST数据集,其中由于pycharm动态绘图好像不行的,所以我使用tensorboardX来实现训练可视化.然后精度,李沐老师是自己实现的,然后我嫌太麻烦了,就调用sklearn.metric的精度的包了.忽然想起来,就是这个文件的末尾要加上writer.close(),忘记关tensorboardX了,不想重新传了,大家自己加一下
